@@ -1,0 +1,215 @@
+@charset "UTF-8";body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #777;
+  background: #fff;
+}
+
+#page {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #F7EFDF;
+/*  background-color: #F7EFDF;*/
+}
+.offcanvas #page {
+  overflow: hidden;
+  position: absolute;
+}
+.offcanvas #page:after {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+}
+
+.container {
+    position: relative;
+}
+
+#progress-bar-text{
+    font-size: 12px;
+	position: absolute;
+	right: 12.2%;
+	top: 1.5%;
+}
+
+#bar-config{/*10000 steps*/
+	width: 20%;
+	height: 3%;
+	position: absolute;
+	right: 8%;
+	top: 5%;
+}
+
+#energy-count{/*10000 steps*/
+	position: absolute;
+	right: 8%;
+	top: 10%;
+}
+
+.leaf{
+	cursor: pointer;
+}
+
+#leaf1{/*10000 steps*/
+	width: 9.5%;
+	height: 15%;
+	position: absolute;
+	left: 20%;
+	top: 60%;
+	z-index: 5;
+}
+
+#leaf2{/*1 car pool*/
+	width: 8%;
+	height: 13%;
+	position: absolute;
+	left: 65%;
+	top: 60%;    
+	z-index: 5;
+}
+
+#leaf3{/*$10 Ventrue*/
+	width: 13%;
+	height: 13%;
+	position: absolute;
+	left: 20%;
+	top: 40%;
+	z-index: 5;
+}
+
+#leaf4{/*Steal from Alex*/
+	width: 14%;
+	height: 14%;
+	position: absolute;
+	left: 60%;
+	top: 40%;
+	z-index: 5;
+}
+
+#leaf5{/*1 Saved Plastic Bag*/
+	width: 15%;
+	height: 15%;
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	z-index: 5;
+}
+
+#tree{
+	width: 10%;
+	height: 16%;
+	position: absolute;
+	left: 42%;
+	bottom: 25%;
+	z-index: 0;
+}
+
+
+#plus1{
+	font-size: 60px;
+	position: absolute;
+	left: 45%;
+	top: 42%;
+}
+
+#share1{
+	cursor: pointer;
+	position: absolute;
+	width: 2.5%;
+	height: auto;
+	right: 5%;
+	bottom: 5%;
+}
+
+#share_info{
+	display: none;
+}
+
+#sharing1{
+/*	visibility: hidden;*/
+	position: absolute;
+	width: 35%;
+	height: 35%;
+	left: 30%;
+	bottom: 40%;
+	z-index: 1000;
+}
+
+#cancel_button{
+	position: absolute;
+	width: 120px;
+	height: 36px;
+	left: 33%;
+	bottom: 48%;
+	z-index: 1001;
+	border-radius: 6px;
+	background-color: #F7EFDF;
+	color:black;
+}
+
+#share_button{
+	position: absolute;
+	width: 120px;
+	height: 36px;
+	left: 51.5%;
+	bottom: 48%;
+	z-index: 1001;
+	border-radius: 6px;
+	background-color: #F7EFDF;
+	color:black;
+}
+
+
+#collect-tip{
+    background-color: rgb(30, 180, 97);
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1020;
+    bottom: 85%;
+    left: 38%;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+.reminder .remindertext {
+    visibility: hidden;
+    width: 300px;
+    background-color: rgb(0, 158, 67);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1020;
+    bottom: 85%;
+    left: 38%;
+    margin-left: 0px;
+    font-size: 16px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.reminder:hover .remindertext {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,279 @@
+@charset "UTF-8";body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #777;
+  background: #fff;
+}
+
+#page {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #F7EFDF;
+}
+.offcanvas #page {
+  overflow: hidden;
+  position: absolute;
+}
+.offcanvas #page:after {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+}
+
+.container {
+	position: relative;
+	width: 720px;
+	content: "";
+    display: table;
+    clear: both;
+}
+
+
+#bar-config{/*10000 steps*/
+	width: 20%;
+	height: 3%;
+	position: absolute;
+	right: 8%;
+	top: 5%;
+}
+
+#energy-count{/*10000 steps*/
+	position: absolute;
+	right: 8%;
+	top: 10%;
+	font-size: 12px;
+}
+
+#progressbar{
+	font-size: 10px;
+}
+
+.leaf{
+	cursor: pointer;
+}
+
+#leaf1{/*10000 steps*/
+	position: absolute;
+	width: 9.5%;
+	height: 15%;
+	left: 20%;
+	top: 60%;
+	z-index: 5;
+}
+
+#leaf2{/*1 car pool*/
+	position: absolute;
+	width: 8%;
+	height: 13%;
+	left: 65%;
+	top: 60%;    
+	z-index: 5;
+}
+
+#leaf3{/*$10 Ventrue*/
+	width: 13%;
+	height: 13%;
+	position: absolute;
+	left: 20%;
+	top: 40%;
+	z-index: 5;
+}
+
+#leaf4{/*Steal from Alex*/
+	width: 14%;
+	height: 14%;
+	position: absolute;
+	left: 60%;
+	top: 40%;
+	z-index: 5;
+}
+
+#leaf5{/*1 Saved Plastic Bag*/
+	width: 15%;
+	height: 15%;
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	z-index: 5;
+}
+
+#tree{
+	width: 10%;
+	height: 16%;
+	position: absolute;
+	left: 42%;
+	bottom: 25%;
+	z-index: 0;
+}
+
+#plus1{
+	font-size: 40px;
+	color: rgb(0, 158, 67);
+    text-shadow: 2px 2px white;
+	position: absolute;
+	left: 30%;
+	top: 42%;
+	z-index: 999;
+}
+
+#share1{
+	position: absolute;
+	width: 4%;
+	height: auto;
+	right: 5%;
+	bottom: 5%;
+}
+
+.friends-comment{
+	position: absolute;
+	right: 1%;
+	bottom: 5%;
+}
+
+/*input[name="comment"]{}*/
+
+#comment-note1{
+	display: none;
+	width: 200px;
+    word-wrap: break-word;
+	position: absolute;
+	top: 15%;
+	right: 20%;
+}
+
+#comment-note2{
+	display: none;
+	width: 200px;
+    word-wrap: break-word;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+
+#comment-note3{
+	display: none;
+	width: 200px;
+    word-wrap: break-word;
+	position: absolute;
+	top: 60%;
+	left: 5%;
+}
+
+.friends-list{
+	list-style-position: outside;
+	float: left; 
+	width: 25%;
+	border: 2px solid grey;
+	margin-bottom: 3px;
+	line-height: 2;
+	position: relative;
+}
+
+.friends-ranking button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.friends-ranking button:hover {
+    background-color: rgb(210,210,200);
+}
+
+.friends-tree{
+	position: relative;
+    float: right;
+    width: 75%;
+}
+
+/*Style of friends-list*/
+#friends-title{
+	font-size: 20px;
+	text-align:center;
+	margin-bottom: 0px;
+	color: rgb(98,66,45);
+	text-shadow: 2px 2px white;
+}
+
+.friends-search{
+	float: left;
+    border: none;
+    margin-right: 5px;
+    margin-left: 3px;
+    font-size: 13px;
+    width: 80%;
+}
+
+::placeholder {
+    color: rgb(180,180,180);
+}
+
+#search-button{
+	font-size: 13px;
+	float: right;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 8px;
+	margin-bottom: 6px;
+}
+
+.friends-ranking{
+	width: 100%;
+	height: 398px;
+	float: left;
+	overflow: scroll;
+	padding: 0;
+	margin: 0;
+}
+
+.friends-element{
+	cursor: pointer;
+	list-style-position: inside;
+	width: 100%;
+	border: 1px solid rgb(120,120,120);
+	padding-left: 10px;
+	line-height: 4.0;
+	position: relative;
+	background-color:rgb(230,230,220);
+	font-size: 17px;
+}
+
+
+.friends-reminder .friends-remindertext {
+    visibility: hidden;
+    /*width: 200px;*/
+    padding: 8px;
+    background-color: rgb(0, 158, 67);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1020;
+    bottom: 85%;
+    left: 35%;
+    margin-left: 5px;
+    font-size: 14px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.friends-reminder:hover .friends-remindertext {
+    visibility: visible;
+    opacity: 1;
+}
